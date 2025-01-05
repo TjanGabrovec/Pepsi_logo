@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<title>Generic - Solid State by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload" style="background-image: url('images/bg.jpg'); background-size: cover; background-repeat: no-repeat;">
+
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Pepsi</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="bezier.html">Bezier Curve</a></li>
+								<li><a href="svg.html">SVG</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+            <style>
+                body {
+                    background-image: url('images/bg.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    margin: 0;
+                }
+                #canvas {
+                    transform: scale(0.8); /* Scale down to 80% */
+                }
+            </style>
+        </head>
+            <canvas id="canvas" width="720" height="640"></canvas>
+        
+            <script>
+                const canvas = document.getElementById('canvas');
+                const ctx = canvas.getContext('2d');
+        
+                ctx.lineWidth = 1.6;
+        
+                ctx.beginPath();
+                ctx.moveTo(360.00, 1.60);
+                ctx.bezierCurveTo(192.00, 2.14, 41.85, 133.34, 41.85, 320.00);
+                ctx.bezierCurveTo(41.85, 506.66, 192.00, 637.86, 360.00, 638.26);
+                ctx.bezierCurveTo(520.00, 637.86, 676.20, 506.66, 678.40, 320.00);
+                ctx.bezierCurveTo(676.20, 133.34, 520.00, 2.14, 360.00, 1.60);
+                ctx.closePath();
+                ctx.fillStyle = "white";
+                ctx.fill();
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+        
+                ctx.beginPath();
+                ctx.moveTo(538.00, 82.00);
+                ctx.bezierCurveTo(240.80, -116.00, -68.00, 226.40, 121.22, 496.38);
+                ctx.moveTo(538.00, 82.00);
+                ctx.bezierCurveTo(485.06, 272.00, 322.94, 440.00, 121.22, 496.38);
+                ctx.fillStyle = "#C9002B";
+                ctx.fill();
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+        
+                ctx.beginPath();
+                ctx.moveTo(609.60, 160.00);
+                ctx.bezierCurveTo(633.80, 240.00, 616.00, 384.34, 432.00, 435.49);
+                ctx.bezierCurveTo(282.33, 474.76, 222.33, 480.79, 132.73, 510.82);
+                ctx.bezierCurveTo(388.26, 788.26, 798.40, 478.94, 609.47, 159.14);
+                ctx.closePath();
+                ctx.fillStyle = "#004B93";
+                ctx.fill();
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+            </script>
+        </body>
+</html>
