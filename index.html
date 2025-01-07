@@ -5,10 +5,57 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/icon.png" type="image/png" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload" style="background-image: url('images/bg.jpg'); background-size: cover; background-repeat: no-repeat;">
+		<style>
+			/* Basic reset */
+			body {
+				min-height: 100vh;
+				margin: 0;
+				padding: 0;
+				overflow-x: hidden;
+				display: flex;
+				flex-direction: column;
+				background-image: url('images/bg.jpg');
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+			
+			#page-wrapper {
+				display: flex;
+				flex-direction: column;
+				flex-grow: 1;
+			}
+			
+			/* Shorten the banner section height */
+			#banner {
+				min-height: 50vh; /* Reduced from 60vh to 50vh */
+			}
+			
+			/* Apply smaller padding for sections */
+			section {
+				padding: 20px 0; /* Reduced padding to make sections more compact */
+			}
 
+			/* Reduce min-height for wrapper and sections */
+			#wrapper {
+				min-height: 80vh; /* Reduced from 90vh to 80vh */
+			}
+
+			/* Shorten individual sections */
+			#two, #three, #four {
+				min-height: 200px; /* Reduced from 250px to 200px */
+				margin-bottom: 5px; /* Reduced margin between sections */
+			}
+			
+			/* Optional: You can also adjust header, menu, and footer if needed */
+			header, #menu {
+				flex-shrink: 0;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -67,9 +114,9 @@
 								<div class="inner">
 									<a href="svg.html" class="image"><img src="images/pathdraw.png" alt="" /></a>
 									<div class="content">
-										<h2 class="major">SVG Version</h2>
-										<p>Recreating the pepsi logo as a SVG format with paths.</p>
-										<a href="svg.html">Learn More</a>
+											<h2 class="major">SVG Version</h2>
+											<p>Recreating the pepsi logo as a SVG format with paths.</p>
+											<a href="svg.html">Learn More</a>
 									</div>
 								</div>
 							</section>
@@ -93,7 +140,7 @@
 									
 									<section class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<a href="#menu" class="image"><img src="images/pic01.jpg" alt="" /></a>
 											<h3 class="major">Both Versions</h3>
 											<p>See Pepsi logo made with the path tool and Bezier curve.</p>
 											<a href="#menu">Learn more</a>
