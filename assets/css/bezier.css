@@ -1,0 +1,17 @@
+body {
+    background-size: 100% 70%;  /* 100% width and 80% height */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+	body::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5); /* 30% black overlay */
+		z-index: -1; /* Keeps the overlay behind all content */
+	}
