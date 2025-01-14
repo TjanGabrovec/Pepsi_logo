@@ -146,7 +146,6 @@
 										</article>
 
 										<article>
-											
 											<h3 class="major">Credits</h3>
 											<p>See creator of the logos and this website.</p>
 											<div class="suprise">
@@ -165,10 +164,27 @@
 													title: 'Credits',
 													text: 'This site was made by Tjan Gabrovec.',
 													icon: 'info',
-													confirmButtonText: 'Okay'
+													confirmButtonText: 'Okay',
+													background: '#2f2f2f', // Dark grey background
+													color: '#ffffff', // White text
+													confirmButtonColor: '#4e4e4e', // Dark grey button color
+													iconColor: '#ffffff', // White icon
 												});
 											});
 										</script>
+										
+										<!-- Custom CSS to fix button text alignment and appearance -->
+										<style>
+											/* Ensure the button text is properly aligned and styled */
+											.swal2-confirm {
+												font-weight: bold;
+												line-height: 2.5; /* Adjust vertical alignment of text */
+												font-size: 16px; /* Increase the font size to make it more readable */
+												padding: 12px 24px; /* Adjust padding for better button size */
+												text-align: center; /* Ensure text is centered horizontally */
+											}
+										</style>
+										
 																				
 									</section>
 								</div>
